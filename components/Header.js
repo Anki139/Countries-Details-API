@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
+import { useTheme } from '../hooks/useTheme'
 
-export default function Header({theme}) {
-    const [isDark, setIsDark] = theme
+export default function Header() {
+    const [isDark, setIsDark] = useTheme()
 
   return (
     <>

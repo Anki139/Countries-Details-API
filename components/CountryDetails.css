@@ -6,10 +6,7 @@ body.dark{
 .theme-change{
     cursor:pointer;
 }
-.shimmer{
-    height:350px;
-    background-color: grey;
-}
+
 .back-btn{
     box-shadow:0 0 8px 0 rgba(0,0,0,0.2);
     padding:6px 24px;

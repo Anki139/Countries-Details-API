@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation, useOutletContext, useParams } from 'react-router-dom'
 import CountryDetailShimmer from './CountryDetailShimmer'
+import { useTheme } from '../hooks/useTheme'
 export default function CountryDetails() {
   const params=useParams()
   const {state}=useLocation()
   const countryName=params.country
   const [countryData, setCountryData]=useState({})
   const  [notFound,setNotFound]=useState(false)
-const [isDark]=useOutletContext()
+const [isDark]=useTheme()
 
 function updateCountryData(data){
 setCountryData({
