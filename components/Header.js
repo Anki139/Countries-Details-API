@@ -2,10 +2,6 @@ import React, { useState } from 'react'
 
 export default function Header({theme}) {
     const [isDark, setIsDark] = theme
-// if(isDark)
-//   document.body.classList.add('dark')
-// else
-//   document.body.classList.remove('dark')
 
   return (
     <>
